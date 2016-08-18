@@ -1,0 +1,4 @@
+FROM hypriot/rpi-node
+RUN mkdir /app
+ADD hello.js /app/hello.js
+CMD ["node", "/app/hello.js"]
