@@ -1,4 +1,13 @@
 FROM hypriot/rpi-node
-RUN mkdir /app
-ADD hello.js /app/hello.js
-CMD ["node", "/app/hello.js"]
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY package.json /usr/src/app/
+RUN npm install
+
+COPY . /usr/src/app
+
+EXPOSE 3000
+
+CMD ["node", "hello.js"]
