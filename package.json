@@ -1,0 +1,23 @@
+{
+  "name": "hello-rene",
+  "version": "1.0.0",
+  "description": "Say Hello to René",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipre/hello-rene.git"
+  },
+  "author": "René Filip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipre/hello-rene/issues"
+  },
+  "homepage": "https://github.com/filipre/hello-rene#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.74.0"
+  }
+}
